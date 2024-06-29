@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Math Game</string>
+    <string name="math_game">Math Game</string>
+    <string name="mode_1">Modus 1</string>
+    <string name="multiplayer">Mehrspieler</string>
+    <string name="credits">Kredite</string>
+    <string name="settings">Definitionen</string>
+    <string name="made_by">Hergestellt von:</string>
+    <string name="francisco_andrade_carvalho_2019129635">Francisco Carvalho 2019129635</string>
+    <string name="maria_dos_santos_carrilho_2019148211">Maria José dos Santos Carrilho 2019148211</string>
+    <string name="level">Niveau</string>
+    <string name="profile">Profil</string>
+    <string name="add_player_picture">Foto hinzufügen</string>
+    <string name="save">Speichern</string>
+    <string name="username">Benutzer</string>
+    <string name="msg_ip_address">Server IP address: %s \nWaiting for clients...</string>
+    <string name="server_mode">Server-Modus</string>
+    <string name="client_mode">Client-Modus</string>
+    <string name="time">Zeit:</string>
+
+</resources>

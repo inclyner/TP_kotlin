@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beige"
+    android:fontFamily="@font/proxima_nova"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/math_game"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:padding="34dp"
+        android:textSize="36sp"
+        android:textColor="@color/white"
+        android:background="@color/lightBlack"
+        android:textStyle="bold"
+        />
+   <!-- <ImageButton
+        android:id="@+id/settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_margin="32dp"
+        android:background="@color/beige"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:src="@drawable/ic_settings"
+        android:contentDescription="@string/settings" />
+
+-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:orientation="vertical"
+        android:padding="32dp">
+        <Button
+            android:id="@+id/btnMode1"
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:textSize="24sp"
+            android:text="@string/mode_1"/>
+        <Button
+            android:id="@+id/btnServer"
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:textSize="24sp"
+            android:text="@string/server_mode"/>
+        <Button
+            android:id="@+id/btnClient"
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:textSize="24sp"
+            android:text="@string/client_mode"/>
+        <Button
+            android:id="@+id/btnCredits"
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:textSize="24sp"
+            android:text="@string/credits"/>
+
+    </LinearLayout>
+
+
+</FrameLayout>

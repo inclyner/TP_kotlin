@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "255531574215",
+    "firebase_url": "https://leaderboard-amov-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "leaderboard-amov",
+    "storage_bucket": "leaderboard-amov.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:255531574215:android:041c620fa07c665432afe2",
+        "android_client_info": {
+          "package_name": "pt.isec.amov2022202320191482112019129635"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "255531574215-i38b3r44apmmdu56flrs24fdaek92uok.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIV67qd9eqcSzIgYmjnTNeYe9tzCxt7YM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "255531574215-i38b3r44apmmdu56flrs24fdaek92uok.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

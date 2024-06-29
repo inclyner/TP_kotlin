@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:grid="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beige"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        >
+        <TextView
+            android:id="@+id/levelTitle"
+            android:fontFamily="@font/proxima_nova"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/pink"
+            android:text="@string/level"
+            android:padding="20dp"
+            android:textSize="30sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/levelNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/pink"
+            android:padding="20dp"
+            android:text="1"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toStartOf="@id/time"
+            app:layout_constraintStart_toEndOf="@+id/levelTitle"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/time"
+            android:text="@string/time"
+            android:textSize="30sp"
+            android:gravity="right"
+            android:padding="20dp"
+            android:background="@color/pink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/levelNumber"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/timeSeconds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/pink"
+            android:padding="20dp"
+            android:text="0:59"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/time"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/grid"
+        app:layout_constraintTop_toBottomOf="@id/info"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        >
+        <LinearLayout
+            android:id="@+id/firstRow"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:weightSum="5">
+
+
+            <!-- First Row -->
+            <TextView
+                android:id="@+id/blockNumber1"
+                android:background="@color/blue"
+                android:gravity="center"
+                android:text="100"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/blockOperation1"
+                android:background="@color/blue"
+                android:gravity="center"
+                android:text="+"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/blockNumber2"
+                android:background="@color/blue"
+                android:gravity="center"
+                android:text="200"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/blockOperation2"
+                android:background="@color/blue"
+                android:gravity="center"
+                android:text="-"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/blockNumber3"
+                android:background="@color/blue"
+                android:gravity="center"
+                android:text="300"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/secondRow"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@+id/firstRow">
+            <!-- Second Row -->
+            <TextView
+                android:id="@+id/blockOperation3"
+                android:background="@color/blue"
+                android:gravity="center"
+                android:text="*"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/blockOperation4"
+                android:background="@color/blue"
+                android:gravity="center"
+                android:text="%"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="70dp"
+                android:layout_margin="5dp" />
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"
+                />
+
+            <TextView
+                android:id="@+id/blockOperation5"
+                android:background="@color/blue"
+                android:gravity="center"
+                android:text="*"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/thirdRow"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@+id/secondRow">
+            <!-- Third Row -->
+            <TextView
+                android:id="@+id/blockNumber4"
+                android:background="@color/blue"
+                android:gravity="center"
+                android:text="100"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="70dp"
+                android:layout_margin="5dp" />
+
+            <TextView
+                android:id="@+id/blockOperation6"
+                android:background="@color/blue"
+                android:gravity="center"
+                android:text="+"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/blockNumber5"
+                android:background="@color/blue"
+                android:gravity="center"
+                android:text="200"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/blockOperation7"
+                android:background="@color/blue"
+                android:gravity="center"
+                android:text="-"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/blockNumber6"
+                android:background="@color/blue"
+                android:gravity="center"
+                android:text="300"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fourthRow"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@+id/thirdRow">
+            <!-- Fourth Row -->
+            <TextView
+                android:id="@+id/blockOperation8"
+                android:background="@color/blue"
+                android:gravity="center"
+                android:text="*"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="70dp"
+                android:layout_margin="5dp" />
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/blockOperation9"
+                android:background="@color/blue"
+                android:gravity="center"
+                android:text="%"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/blockOperation10"
+                android:background="@color/blue"
+                android:gravity="center"
+                android:text="*"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/fifthRow"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@+id/fourthRow">
+            <!-- Fifth Row -->
+            <TextView
+                android:id="@+id/blockNumber7"
+                android:background="@color/blue"
+                android:gravity="center"
+                android:text="100"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="70dp"
+                android:layout_margin="5dp" />
+
+            <TextView
+                android:id="@+id/blockOperation11"
+                android:background="@color/blue"
+                android:gravity="center"
+                android:text="+"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/blockNumber8"
+                android:background="@color/blue"
+                android:gravity="center"
+                android:text="999"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/blockOperation12"
+                android:background="@color/blue"
+                android:gravity="center"
+                android:text="-"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/blockNumber9"
+                android:background="@color/blue"
+                android:gravity="center"
+                android:text="300"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="70dp"
+                android:layout_margin="5dp"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

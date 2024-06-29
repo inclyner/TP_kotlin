@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/beige"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/credits"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/lightBlack"
+        android:padding="32dp"
+        android:text="@string/credits"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/madeby"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/pink"
+        android:gravity="center_horizontal"
+        android:padding="45sp"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/white"
+        android:text="@string/made_by"
+        android:textSize="45sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/credits" />
+
+    <TextView
+        android:id="@+id/francis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/darkBlue"
+        android:textSize="40sp"
+        android:padding="30sp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white"
+        android:text="@string/francisco_andrade_carvalho_2019129635"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toBottomOf="@id/madeby" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/darkBlue"
+        android:gravity="center_horizontal"
+        android:text="@string/maria_dos_santos_carrilho_2019148211"
+        android:textColor="@color/white"
+        android:padding="30sp"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/francis"
+         />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
